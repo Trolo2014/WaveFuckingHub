@@ -18,17 +18,14 @@ local OnJoinKickList = {679804290,136099207,520944,43247021,137621,1135910299,34
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 
-function AntiMod() pcall(function()
+function AntiMod()  pcall(function()
 game.StarterGui:SetCore("SendNotification", {
-Title = "There is Mod Or Snitch in OPL"; 
+Title = "Mod Or Snitch just joined"; 
 Text = "His UserName is set in ur clipboard paste it in that game search box , and wait until he will be offline"; 
 Duration = 999999999999;
 })
 setclipboard(_G.Mod.Name)
-repeat task.wait()
-repeat task.wait() until game:GetService("Workspace").UserData:FindFirstChild("User_".._G.Mod.UserId)
-repeat task.wait() until game:GetService("Workspace").UserData["User_".._G.Mod.UserId]:FindFirstChild("FinishedLoading")
-until game:GetService("Workspace").UserData["User_".._G.Mod.UserId].FinishedLoading.Value == true 
+repeat wait() until game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_".._G.Mod.UserId):WaitForChild("FinishedLoading").Value == true 
 local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
 local Data ={["content"] = _G.Mod.Name.." Mod/Snitch is playing ||@everyone||"}
 local Headers = {["Content-Type"]="application/json"}
@@ -36,10 +33,13 @@ local Encoded = game:GetService("HttpService"):JSONEncode(Data)
 Request = http_request or request or HttpPost or syn.request
 local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
+
 pcall(function()
 local WebSocket = syn.websocket.connect("wss://adminpanel521.glitch.me/")
 WebSocket:Send("Mod")
 end) 
+
+Lp:Kick(_G.Mod.Name.." in Server")
 end)
 end
 
