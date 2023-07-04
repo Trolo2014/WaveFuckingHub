@@ -34,11 +34,6 @@ Request = http_request or request or HttpPost or syn.request
 local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
 
-pcall(function()
-local WebSocket = syn.websocket.connect("wss://adminpanel521.glitch.me/")
-WebSocket:Send("Mod")
-end) 
-
 Lp:Kick(_G.Mod.Name.." in Server")
 end)
 end
@@ -48,12 +43,10 @@ if v.Name ~= Lp.Name then
 if table.find(OnJoinKickList, v.UserId) then
 _G.Mod = game.Players[""..v.Name]
 AntiMod()
-Lp:Kick(v.Name.." "..v.DisplayName.." Mod/snitch is in your server.")
-wait(2.5) 
-game:GetService("TeleportService"):Teleport(2120256007,Lp)
 end 
 end
 end
+
 Players.PlayerAdded:Connect(function(plr)
     if table.find(OnJoinKickList, plr.UserId) then 
 	    _G.Mod = game.Players[""..plr.Name]
