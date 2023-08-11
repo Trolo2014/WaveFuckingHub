@@ -51,9 +51,6 @@ Players.PlayerAdded:Connect(function(plr)
     if table.find(OnJoinKickList, plr.UserId) then 
 	    _G.Mod = game.Players[""..plr.Name]
         AntiMod()
-		Lp:Kick(plr.Name.." "..plr.DisplayName.." Mod/snitch is in your server.")
-        wait(2.5) 
-        game:GetService("TeleportService"):Teleport(2120256007,Lp)
     end 
 end)
 _G.NotifierImagine = {
