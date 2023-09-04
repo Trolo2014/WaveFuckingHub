@@ -21,7 +21,6 @@ local OnJoinKickList = {2350183594,679804290,136099207,520944,43247021,137621,11
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 
-
 function AntiMod() 
 game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_".._G.Mod.UserId):WaitForChild("FinishedLoading"):GetPropertyChangedSignal("Value"):Connect(function() 
 local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
