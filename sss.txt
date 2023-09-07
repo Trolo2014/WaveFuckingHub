@@ -31,7 +31,7 @@ Lp:Kick(Faggot.Name.." in Server")
 end
 
 for i,v in pairs(Players:GetPlayers()) do 
-if v ~= Lp and table.find(OnJoinKickList, v.UserId) then
+if table.find(OnJoinKickList, v.UserId) then
 AntiMod(v)
 end 
 end
