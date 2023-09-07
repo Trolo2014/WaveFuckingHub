@@ -20,7 +20,6 @@ local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 
 local function AntiMod(Faggot)
-game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..Faggot.UserId):WaitForChild("FinishedLoading"):GetPropertyChangedSignal("Value"):Connect(function() 
 local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
 local Data ={["content"] = Faggot.Name.." Mod/Snitch is playing ||@everyone||"}
 local Headers = {["Content-Type"]="application/json"}
@@ -29,7 +28,6 @@ Request = http_request or request or HttpPost or syn.request
 local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
 Lp:Kick(Faggot.Name.." in Server")
-end)
 end
 
 for i,v in pairs(Players:GetPlayers()) do 
@@ -40,7 +38,9 @@ end
 
 Players.PlayerAdded:Connect(function(plr)
     if table.find(OnJoinKickList, plr.UserId) then 
-	    AntiMod(plr)
+	    game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading"):GetPropertyChangedSignal("Value"):Connect(function() 
+		AntiMod(plr)
+		end)
     end 
 end)
 
