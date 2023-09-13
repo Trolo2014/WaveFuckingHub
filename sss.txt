@@ -22,7 +22,7 @@ _G.RatRemovalVr = "8.2.3a"
 _G.FatherlessVietnamiseAndThaisNames = {"TH","th","VN","vn","Tran","Huy","huy","Tuan","Than"}
 
 for i,v in pairs(Players:GetChildren()) do
-if string.find(v.Name, _G.FatherlessVietnamiseAndThaisNames) then
+if table.match(v.Name, _G.FatherlessVietnamiseAndThaisNames) then
 table.insert(_G.RatList, v.UserId)
 end
 end
