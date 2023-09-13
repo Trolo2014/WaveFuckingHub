@@ -21,14 +21,6 @@ _G.RatList = {3463979321,681395446,4765653522,2701356096,1105818427,3479817046,4
 _G.RatNamiseRatThailandNamesList = {"TH","VN","th","vn","Huy","CSM","Thau","thau","hack","acsellcua","CSM","NHD"}
 _G.RatRemovalVr = "8.2.3a"
 
-for i,x in pairs(_G.RatNamiseRatThailandNamesList) do
-for i,v in pairs(Players:GetPlayers()) do 
-if string.find(v.Name, x) then
-table.insert(_G.RatList, v.UserId)
-end
-end
-end
-
 
 local function AntiMod(Faggot)
 local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
