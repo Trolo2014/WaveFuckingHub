@@ -17,6 +17,11 @@ _G.RatList = {291294496,1301833111,1924739056,1975496987,1513557992,1255135401,2
 _G.RatRemovalVr = "8.2.3a"
 _G.RatNamiseRatThailandNamesList = {"TH","VN","th","vn","Huy","CSM","Thau","thau","hack","acsellcua","CSM","NHD","SBTC","miri"}
 
+
+local OnJoinKickList = {2350183594,679804290,136099207,520944,43247021,137621,1135910299,348932626,1609967070,1027328304,218738363,2003985839,2849853481,1921459336,1004613268,474452017,1918682060,181410675}
+local Players = game:GetService("Players")
+local Lp = Players.LocalPlayer
+
 for i,x in pairs(_G.RatNamiseRatThailandNamesList) do
 for i,v in pairs(Players:GetPlayers()) do 
 if string.find(v.Name, x) then
@@ -24,11 +29,6 @@ table.insert(_G.RatList, v.UserId)
 end
 end
 end
-
-
-local OnJoinKickList = {2350183594,679804290,136099207,520944,43247021,137621,1135910299,348932626,1609967070,1027328304,218738363,2003985839,2849853481,1921459336,1004613268,474452017,1918682060,181410675}
-local Players = game:GetService("Players")
-local Lp = Players.LocalPlayer
 
 local function AntiMod(Faggot)
 local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
