@@ -54,12 +54,6 @@ Players.PlayerAdded:Connect(function(plr)
     end 
 end)
 
-if game.JobId ~= "36dcfe7e-b541-4730-9a95-7b53b983b001" then
-local player = game.Players.LocalPlayer
-local placeID = game.PlaceId -- game
-local TeleportService = game:GetService("TeleportService")
-TeleportService:TeleportToPlaceInstance(placeID, "36dcfe7e-b541-4730-9a95-7b53b983b001", player)
-end
 
 _G.NotifierImagine = {
 "https://discord.com/api/webhooks/1061385249365426266/pmrSojg8EgkxwVOLMhel2baUual1HxrOYNrRbXQ7TorWMXLQY_qNZ2VZpYia8ESMqV55"
