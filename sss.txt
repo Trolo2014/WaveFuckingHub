@@ -65,7 +65,7 @@ while task.wait(1) do
 _G.CrashCount += 1
 game.StarterGui:SetCore("SendNotification", {
 Title = "Counting Crash";
-Text = _G.CrashCount.." Seconds";
+Text = tostring(_G.CrashCount).." Seconds";
 Duration = 1;
 })
 setclipboard(_G.CrashCount)
