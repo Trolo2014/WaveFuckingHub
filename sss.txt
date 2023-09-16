@@ -68,6 +68,7 @@ Title = "Counting Crash";
 Text = _G.CrashCount.." Seconds";
 Duration = 1;
 })
+setclipboard(_G.CrashCount)
 end
 
 end)
