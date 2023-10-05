@@ -45,7 +45,7 @@ Players.PlayerAdded:Connect(function(plr)
     end 
 end)
 
-Papaj2137
+
 _G.NotifierImagine = {
 "https://discord.com/api/webhooks/1061385249365426266/pmrSojg8EgkxwVOLMhel2baUual1HxrOYNrRbXQ7TorWMXLQY_qNZ2VZpYia8ESMqV55"
 }
