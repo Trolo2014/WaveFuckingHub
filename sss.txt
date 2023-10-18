@@ -22,7 +22,7 @@ Duration = 10;
 
 
 function Shop()
-local Shop = {"Sell Paypal(Euro): Magma(2,50),Quake(7,50),Phoenix(7,50),Dark(15)","if intrested dm shawn4444 Disgord"}
+local Shop = {"Sell Paypal(Euro): Magma(2.50),Quake(7.50),Phoenix(7.50),Dark(15)","if intrested dm shawn4444 Disgord"}
 
 for i,v in pairs(Shop) do
 local args = {
