@@ -75,7 +75,7 @@ end
 Players.PlayerAdded:Connect(function(plr)
     if table.find(OnJoinKickList, plr.UserId) then 
     game.StarterGui:SetCore("SendNotification", {Title = plr.Name.." is joining";Text = "auto kick soon";Duration = 5;})
-       game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
+    game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
     AntiMod(plr)
     end 
 end)
