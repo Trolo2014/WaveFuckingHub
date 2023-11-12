@@ -1,20 +1,19 @@
 --imagine trying to crack it gl fam
 
-
-spawn(function() 
-repeat wait() until game.CoreGui:FindFirstChild('RobloxPromptGui')
-local lp,po,ts = game:GetService('Players').LocalPlayer,game.CoreGui.RobloxPromptGui.promptOverlay,game:GetService('TeleportService')
+local lp,po,ts = game:GetService('Players').LocalPlayer,game:WaitForChild("CoreGui"):WaitForChild("RobloxPromptGui"):WaitForChild("promptOverlay"),game:GetService('TeleportService')
 po.ChildAdded:connect(function(a)
 if a.Name == 'ErrorPrompt' then
-while task.wait(5)  do pcall(function()
+
+while task.wait(5) do pcall(function()
 for i, v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
-if type(v) == "table" and v.maxPlayers > v.playing and v.ping < 150 and v.id ~= game.JobId then
+if type(v) == "table" and v.id ~= game.JobId then
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, v.id)
 end end end)
+
 end
 end
 end)
-end)
+
 repeat wait() until game:IsLoaded()
 
 game.StarterGui:SetCore("SendNotification", {
