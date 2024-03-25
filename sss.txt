@@ -16,8 +16,8 @@ end)
 repeat wait() until game:IsLoaded()
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Wave Hub 1.7";
-Text = "Auto Exe Cannon Ball edit abit";
+Title = "Wave Hub 1.8";
+Text = "Challenges Completer";
 Duration = 10;
 })
 
