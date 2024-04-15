@@ -16,6 +16,12 @@ end)
 
 
 repeat wait(0) until game:IsLoaded()
+_G.NotifierImagine = {
+"https://discord.com/api/webhooks/1061385249365426266/pmrSojg8EgkxwVOLMhel2baUual1HxrOYNrRbXQ7TorWMXLQY_qNZ2VZpYia8ESMqV55",
+"https://discord.com/api/webhooks/1160531704692350986/SK90yAB3wFGaaLuUlQ7Z36S6QSdn8KW44za296L1o6-X0F86KcCWI7WmNqdLIUlhoZwi",
+"https://discord.com/api/webhooks/1160599023762297023/3Xb3_gmMbIucNwOBvoUVXuzPf-mA7NdhDzGNEmwA9c6vMxMtmo_f-HQun4E2w_0tmbBz"
+}
+
 local OnJoinKickList = {2350183594,679804290,136099207,520944,43247021,137621,1135910299,348932626,1609967070,1027328304,218738363,2003985839,2849853481,1921459336,1004613268,474452017,1918682060,181410675}
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
