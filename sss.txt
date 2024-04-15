@@ -14,11 +14,7 @@ end)
 
 repeat wait() until game:IsLoaded()
 
-game.StarterGui:SetCore("SendNotification", {
-Title = "Wave Hub 1.9";
-Text = "Fiew Bug Fix";
-Duration = 10;
-})
+--game.StarterGui:SetCore("SendNotification", {Title = "Wave Hub 1.9";Text = "Fiew Bug Fix";Duration = 10;})
 
 
 function Shop()
