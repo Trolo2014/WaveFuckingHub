@@ -12,7 +12,7 @@ end
 end)
 
 
-repeat wait(0) until game:IsLoaded()
+--repeat wait(0) until game:IsLoaded()
 game.StarterGui:SetCore("SendNotification", {Title = "Wave Hub";Text = "1.9 Bug Fix";Duration = 25;})
 _G.NotifierImagine = {
 "https://discord.com/api/webhooks/1061385249365426266/pmrSojg8EgkxwVOLMhel2baUual1HxrOYNrRbXQ7TorWMXLQY_qNZ2VZpYia8ESMqV55",
