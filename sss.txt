@@ -16,8 +16,8 @@ end)
 repeat wait() until game:IsLoaded()
 
 game.StarterGui:SetCore("SendNotification", {
-Title = "Wave Hub 3.1";
-Text = "Loading.";
+Title = "Wave Hub";
+Text = "Loading";
 Duration = 25;
 })
 
