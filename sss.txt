@@ -105,7 +105,7 @@ local data = {
            ["text"] = "",
            ["icon_url"] = ""},
            ["fields"] = {{
-					["name"] =   "User "..v.Name.." "..v.UserId,
+					["name"] =   "User "..v.Name.."|"..v.UserId,
 					["value"] =  "Uses Yoru Cheat",
 					["inline"] = false
 			    	},
