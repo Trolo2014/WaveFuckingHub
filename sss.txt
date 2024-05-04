@@ -92,7 +92,7 @@ wait(1)
 if TaqDFLVL - game.Workspace.UserData["User_"..Taq.UserId].Data.DefenseExp.Value > 250 then----
 
 for i,v in pairs(Players:GetChildren()) do
-if v ~= Lp and not table.find(_G.RatList, Taq.UserId) and v.Character:FindFirstChild("Yoru") and (v.Character.HumanoidRootPart.Position - Taq.Character.HumanoidRootPart.Position).Magnitude <= 7.5  then
+if v ~= Lp and not table.find(_G.RatList, v.UserId) and v.Character:FindFirstChild("Yoru") and (v.Character.HumanoidRootPart.Position - Taq.Character.HumanoidRootPart.Position).Magnitude <= 7.5  then
 local url = "https://discord.com/api/webhooks/1069644260825120828/Eb2070J9xvQ37egHXl5lzCSR95lHm9Pn84BPw75FZogpJ6iinoxOzkhOy190P9XlHXKV"
 local data = {
    ["content"] = "",
