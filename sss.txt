@@ -50,7 +50,7 @@ end
 
 
 local OnJoinKickList = {835620275,520944,43247021,137621,1135910299,295337577,2350183594}
-_G.RatRemovalVr = "8.2.5b"
+_G.RatRemovalVr = "8.2.6"
 
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
