@@ -81,6 +81,15 @@ Players.PlayerAdded:Connect(function(plr)
 end)
 
 
+--reseter folder
+local Name = "TrashDisposal.txt"
+local DefaultSettings = {}
+local KillListFags
+if not pcall(function() readfile(Name) end) then writefile(Name, game:service'HttpService':JSONEncode(DefaultSettings)) end
+KillListFags = {}
+writefile(Name,game:service'HttpService':JSONEncode(KillListFags))
+
+
 _G.NotifierImagine = {
 "https://discord.com/api/webhooks/1061385249365426266/pmrSojg8EgkxwVOLMhel2baUual1HxrOYNrRbXQ7TorWMXLQY_qNZ2VZpYia8ESMqV55"
 }
