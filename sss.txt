@@ -14,40 +14,7 @@ end
 end)
 
 repeat wait() until game:IsLoaded()
-
-game.StarterGui:SetCore("SendNotification", {
-Title = "Wave Hub";
-Text = "Loading";
-Duration = 25;
-})
-
-function Shop()
-local Shop = {"Sell Paypal(Euro): Magma(2.5),Quake(5),Phoenix(5),Vampire(7.5),Dark(10)","if intrested dm Shawn4444"}
-for i,v in pairs(Shop) do
-local args = {
-    [1] = v,
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait()
-end
-game.Players.PlayerAdded:Connect(function(plr)
-game:GetService("Workspace").UserData:WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
-for i,v in pairs(Shop) do
-local args = {
-    [1] = "/w "..plr.Name.." "..v,
-    [2] = "All"
-}
-
-game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents"):WaitForChild("SayMessageRequest"):FireServer(unpack(args))
-wait()
-end
-end)
-end
-
---Shop()
-
+game.StarterGui:SetCore("SendNotification", {Title = "Wave Hub";Text = "Loading";Duration = 25;})
 
 local OnJoinKickList = {835620275,520944,43247021,137621,1135910299,295337577,2350183594}
 _G.RatRemovalVr = "8.2.5b"
