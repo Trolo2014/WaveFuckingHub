@@ -57,7 +57,7 @@ local Lp = Players.LocalPlayer
 
 local function AntiMod(Faggot)
 local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
-local Data ={["content"] = Faggot.Name.." Mod/Snitch is playing ||@everyone||"}
+local Data ={["content"] = Faggot.Name.." Mod/Snitch is playing ||@everyone|| ServerID:"..game.JobId}
 local Headers = {["Content-Type"]="application/json"}
 local Encoded = game:GetService("HttpService"):JSONEncode(Data)
 Request = http_request or request or HttpPost or syn.request
