@@ -1,5 +1,4 @@
 --imagine trying to crack it gl fam
-
 local po,ts = game:WaitForChild("CoreGui"):WaitForChild("RobloxPromptGui"):WaitForChild("promptOverlay"),game:GetService('TeleportService')
 po.ChildAdded:connect(function(a)
 if a.Name == 'ErrorPrompt' then
@@ -20,9 +19,10 @@ local Lp = Players.LocalPlayer
 local OnJoinKickList = {835620275,520944,43247021,137621,1135910299,295337577,2350183594}
 _G.RatRemovalVr = "8.2.5b"
 
+
 local function AntiMod(Faggot)
 Lp:Kick(Faggot.Name.." in Server")
-local WBH = "https://discord.com/api/webhooks/1099436799539019807/t7mSIrJNimbbM2XrxDaFdn0MOWRNLXwP7UWui-BmUj5W6TTuj7ClL_NEpVZ7bdpLA2zS"
+local WBH = "https://discord.com/api/webhooks/1280140057600200704/lq0fFsBw3EZDIlEDOW0WG3BNpM1yBPCCgDe8YNTG7rzLpgRCwkM_vJwxv3guG3Hbg1x2"---vietnamise and thailand mothers are whores <<<<<<<<<<<<<<<<<<<
 local Data ={["content"] = Faggot.Name.." Mod/Snitch Is Playing ServerID:"..game.JobId.." ,Paste To Join(BloxStrap) ||roblox://experiences/start?placeId=3237168&gameInstanceId="..game.JobId.."|| @everyone"}
 local Headers = {["Content-Type"]="application/json"}
 local Encoded = game:GetService("HttpService"):JSONEncode(Data)
