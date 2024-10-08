@@ -45,15 +45,12 @@ Request(Final)
 end 
 
 
-
-
 for i,v in pairs(Players:GetPlayers()) do 
 if table.find(OnJoinKickList, v.UserId) then
 AntiMod(v)
-FaggotFingerPrint(v)
 end 
+FaggotFingerPrint(v)
 end
-
 
 Players.PlayerAdded:Connect(function(plr)
 game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
@@ -67,7 +64,6 @@ Players.PlayerAdded:Connect(function(plr)
     game.StarterGui:SetCore("SendNotification", {Title = plr.Name.." Mod / Snitch Is Joining";Text = "Auto Kick Soon";Duration = 5;})
     game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
     AntiMod(plr)
-	FaggotFingerPrint(plr)
     end 
 end)
 
