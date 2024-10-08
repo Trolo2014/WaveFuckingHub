@@ -32,9 +32,22 @@ local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
 end
 
+local function FaggotFingerPrint(Kys)
+local Data = Workspace.UserData["User_"..Kys.UserId].Data
+if Data["CC_Hair"].Value == 13 and Data["CC_Hair_Color"].Value == 38 and Data["CC_Torso"].Value == 5 and Data["CC_Torso_Color"].Value == 34 and Data["CC_Arms_Color"].Value == 3 and Data["CC_Arms_Color"].Value == 38 and Data["CC_Legs"].Value == 5 and Data["CC_Legs_Color"].Value == 38 and Data["CC_Face"].Value == 3 and Data["CC_Hands_Color"].Value == 34 and Data["CC_Feet"].Value == 16 and Data["CC_Feet_Color"].Value == 34 then
+local WBH = "https://discord.com/api/webhooks/1280140057600200704/lq0fFsBw3EZDIlEDOW0WG3BNpM1yBPCCgDe8YNTG7rzLpgRCwkM_vJwxv3guG3Hbg1x2"---Vietnam And Thailand Mother Gets Fucked By Dogs <<<<<<<<<<<<<<<<<<<
+local Data ={["content"] = Kys.Name.." Faggot Finger Printed"}
+local Headers = {["Content-Type"]="application/json"}
+local Encoded = game:GetService("HttpService"):JSONEncode(Data)
+Request = http_request or request or HttpPost or syn.request
+local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
+Request(Final)
+end 
+
 for i,v in pairs(Players:GetPlayers()) do 
 if table.find(OnJoinKickList, v.UserId) then
 AntiMod(v)
+FaggotFingerPrint(v)
 end 
 end
 
@@ -43,6 +56,7 @@ Players.PlayerAdded:Connect(function(plr)
     game.StarterGui:SetCore("SendNotification", {Title = plr.Name.." Mod / Snitch Is Joining";Text = "Auto Kick Soon";Duration = 5;})
     game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
     AntiMod(plr)
+	FaggotFingerPrint(plr)
     end 
 end)
 
