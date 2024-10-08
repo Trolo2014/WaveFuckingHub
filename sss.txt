@@ -43,7 +43,7 @@ Request = http_request or request or HttpPost or syn.request
 local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
 end 
-
+end
 
 for i,v in pairs(Players:GetPlayers()) do 
 if table.find(OnJoinKickList, v.UserId) then
