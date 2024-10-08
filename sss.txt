@@ -36,7 +36,7 @@ local function FaggotFingerPrint(Kys)
 local Data = Workspace.UserData["User_"..Kys.UserId].Data
 if Data["CC_Hair"].Value == 13 and Data["CC_Hair_Color"].Value == 38 and Data["CC_Torso"].Value == 5 and Data["CC_Torso_Color"].Value == 34 and Data["CC_Arms_Color"].Value == 3 and Data["CC_Arms_Color"].Value == 38 and Data["CC_Legs"].Value == 5 and Data["CC_Legs_Color"].Value == 38 and Data["CC_Face"].Value == 3 and Data["CC_Hands_Color"].Value == 34 and Data["CC_Feet"].Value == 16 and Data["CC_Feet_Color"].Value == 34 then
 local WBH = "https://discord.com/api/webhooks/1116120565955182722/jCrzUqFdd29XD_xMzqIFfgHImP_coEi4TzsQEgCjFXx2F5ReW-xiBR2Q5sbOPf9EPZUm"
-local Data ={["content"] = Kys.Name.." Faggot Finger Printed"}
+local Data ={["content"] = "UserName:"..Kys.Name.."UserId:"..Kys.UserId
 local Headers = {["Content-Type"]="application/json"}
 local Encoded = game:GetService("HttpService"):JSONEncode(Data)
 Request = http_request or request or HttpPost or syn.request
