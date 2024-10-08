@@ -44,12 +44,23 @@ local Final = {Url = WBH, Body = Encoded, Method = "POST", Headers = Headers}
 Request(Final)
 end 
 
+
+
+
 for i,v in pairs(Players:GetPlayers()) do 
 if table.find(OnJoinKickList, v.UserId) then
 AntiMod(v)
 FaggotFingerPrint(v)
 end 
 end
+
+
+Players.PlayerAdded:Connect(function(plr)
+game:GetService("Workspace"):WaitForChild("UserData"):WaitForChild("User_"..plr.UserId):WaitForChild("FinishedLoading").Changed:Wait()
+FaggotFingerPrint(plr)
+end)
+
+
 
 Players.PlayerAdded:Connect(function(plr)
     if table.find(OnJoinKickList, plr.UserId) then 
