@@ -13,13 +13,13 @@ end end end) end
 end
 end)
 
+
 repeat wait() until game:IsLoaded()
 game.StarterGui:SetCore("SendNotification", {Title = "Wave Hub";Text = "Loading";Duration = 25;})
+
 local Players = game:GetService("Players")
 local Lp = Players.LocalPlayer
 local OnJoinKickList = {835620275,520944,43247021,137621,1135910299,295337577,2350183594}
-_G.RatRemovalVr = "8.2.5b"
-
 
 local function AntiMod(Faggot)
 Lp:Kick(Faggot.Name.." in Server")
