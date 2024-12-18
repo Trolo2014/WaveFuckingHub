@@ -1,5 +1,4 @@
 --if you Are Vietnamise or Thailand Your Mother Is WHORE lol you will never crack it faggot
-
 local po,ts = game:WaitForChild("CoreGui"):WaitForChild("RobloxPromptGui"):WaitForChild("promptOverlay"),game:GetService('TeleportService')
 po.ChildAdded:connect(function(a)
 if a.Name == 'ErrorPrompt' then
