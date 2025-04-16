@@ -4,13 +4,14 @@ local po,ts = game:WaitForChild("CoreGui"):WaitForChild("RobloxPromptGui"):WaitF
 po.ChildAdded:connect(function(a)
 if a.Name == 'ErrorPrompt' then
 
-while task.wait(5) do pcall(function()
+while true do pcall(function()
 for i,v in pairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
 if type(v) == "table" and v.id ~= game.JobId then
 game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, v.id)
 end 
 end 
-end) 
+end)
+task.wait(2.5)  
 end
 
 end
