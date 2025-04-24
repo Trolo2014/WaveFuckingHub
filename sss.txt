@@ -4,10 +4,9 @@ local po,ts = game:WaitForChild("CoreGui"):WaitForChild("RobloxPromptGui"):WaitF
 po.ChildAdded:connect(function(a)
 if a.Name == 'ErrorPrompt' then
 
-while true do pcall(function()
+while wait(1) do pcall(function()
 ts:Teleport(3237168)
 end)
-task.wait(2.5)  
 end
 
 end
